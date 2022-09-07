@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jsform</title>
+    <!-- css links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- <fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form method="post">
+            <div>
+                <h1>Regestration Form</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <lable class="lable">Name :</lable>
+                    <input type="text"  placeholder="First name" class="name" id="fname" required />
+                </div>
+                <div class="col-lg-6">
+                    <input type="text"  placeholder="Last name" class="name" id="lname"  required />
+                </div>
+          </div><br>
+            <div>
+                <lable class="lable">Email :</lable>
+                <input class="lol" onkeyup=" ename()" type="text" placeholder="Enter your mail" id="email" required />
+            </div><br>
+            <div>
+                <lable class="lable">Mobile :</lable>
+                <input class="lol" type="text" placeholder="Mobile Number" id="mobile" maxlength="10" required />
+            </div><br>
+            <div>
+                <lable class="lable"> Date of Birth :</lable>
+                <input class="lol" type="text" placeholder="Date of Birth" maxlength="10" id="dob" required />
+            </div><br>
+            <div>
+                <lable class="lable"> Adharcard :</lable>
+                <input class="lol" type="text" placeholder="Adhar Number" id="adhar" required />
+            </div><br>
+            <div>
+                <lable class="lable"> Address :</lable>
+                <input class="lol" type="text" placeholder="present address" id="addres" /><br><br>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label class="lable">Mother tongue :</label>
+                    <select name="country" id="language" required>
+                        <option value="Telugu">Telugu</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Tamil">Tamil</option>
+                    </select>
+                </div>
+               </div>
+               <div class="col-lg-6">
+                <input type="submit" id="submit" name="submit" button class="btn btn-primary btn-block" />
+                  </div>
+           </form>
+      </div>  
+      <div>
+        <table id="table" class="table">
+
+            <tr>
+                <th>sno</th>
+
+
+                <th>fname</th>
+                <th>lname</th>
+                <th>Email</th>
+                <th>First mobile</th>
+                <th>DOB</th>
+                <th>Adharcard</th>
+                <th>Address</th>
+                <th>mother_Tongue</th>
+                <th></th>
+
+            </tr>
+        </table>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+   <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
